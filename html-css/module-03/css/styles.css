@@ -1,0 +1,143 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+/* HEADER */
+.page-header{
+    
+    font-family: "Playfair Display", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px; 
+    list-style: none;
+    text-transform: uppercase;
+    /* background-color: lightblue; */
+    /* height: 190px;      */
+}
+
+.page-nav{
+    padding: 70px 0;
+}
+
+.site-navigation{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.site-navigation li{
+    display: inline-block;
+}
+
+/* дает правый margin всем, кроме последнего*/
+.site-navigation li:not(:last-child){
+    margin-right: 122px;
+}
+
+.site-navigation a {
+    color: #626262;
+    font-weight: 400;
+    /* убирает подчеркивание и подсвечивание ссылки */
+    text-decoration: none;  
+}
+
+/* hover при наведении мышью меняет цвет, focus меняет цвет принаведении клавиатурой */
+.site-navigation a:hover,
+.site-navigation a:focus{
+    color: #03a9f4; 
+}
+
+/* MAIN */
+
+/* обязательно,чтобы раскрыть весь потенциал картинки (стандартно) */
+img{
+    display: inline-block;
+    min-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    font-family: "Playfair Display", "Arial", sans-serif;
+    color: #626262;
+    font-weight: 400;
+    /* уберем перенос строки, чтобы article плотно прилегали друг к другу */
+    font-size: 0; 
+       /*убрали */
+}
+
+.features{
+    width: 899px;
+    margin: 0 auto;
+
+}
+
+.article{
+    display: inline-block;
+    width: 420px;
+    height: 480px;
+    /* margin: 0;
+    padding: 0; */
+    margin-right: 19px;
+    margin-top: 62px;
+}
+
+/* .article:not(:nth-child(2n)){
+    margin-right: 19px;
+}  для каждого не второго mr 19px*/
+
+/* для каждого второго margin-right убрать*/
+.article:nth-child(2n){
+    margin-right: 0;
+}
+/* .article:nth-child(1n){
+    margin-left: 0;
+} */
+
+
+.article-name{
+    font-family: Ubuntu;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b4ad9e;
+    font-weight: 100;
+    line-height: ;
+    text-transform: uppercase;
+    /*p=17-14/2=1,5; h3=36-30/2=3; 3+4,5~5px  mb=30-5=25px */
+    margin-bottom: 25px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+
+.heading{
+    font-size: 30px;
+    line-height: 36px;
+    /* разница 8px(см формулу вебирана), расстояние линейкой 35px. 35-8=27px будет margin-bottom;  */
+    margin-bottom: 27px;
+}
+
+.post{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+button{
+    font-family: "Playfair Display", "Arial", sans-serif;
+    color: #626262;
+    background-color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid;
+    padding: 15px 34px;
+    /* margin-top: 50px;
+    margin-bottom: 70px; */
+    display: block;
+    margin: 50px auto 70px;
+}
