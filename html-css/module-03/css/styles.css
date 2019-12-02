@@ -2,22 +2,29 @@ html{
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Playfair Display", "Arial", sans-serif;
+    color: #626262;
+}
+
 *,
 *::before,
 *::after{
     box-sizing: inherit;
 }
 
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
 /* HEADER */
 .page-header{
-    
-    font-family: "Playfair Display", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px; 
     list-style: none;
     text-transform: uppercase;
-    /* background-color: lightblue; */
-    /* height: 190px;      */
+
 }
 
 .page-nav{
@@ -27,6 +34,7 @@ html{
 .site-navigation{
     margin: 0;
     padding: 0;
+    font-size: 0;
     text-align: center;
     vertical-align: middle;
 }
@@ -43,6 +51,8 @@ html{
 .site-navigation a {
     color: #626262;
     font-weight: 400;
+    font-size: 14px;
+    display: block;
     /* убирает подчеркивание и подсвечивание ссылки */
     text-decoration: none;  
 }
@@ -62,29 +72,24 @@ img{
     height: auto;
 }
 
-.wrapper{
-    font-family: "Playfair Display", "Arial", sans-serif;
-    color: #626262;
+
+
+.features{
+    padding-bottom: 50px;
+    /* font-family: "Playfair Display", "Arial", sans-serif;
+    color: #626262; */
     font-weight: 400;
     /* уберем перенос строки, чтобы article плотно прилегали друг к другу */
     font-size: 0; 
        /*убрали */
 }
 
-.features{
-    width: 899px;
-    margin: 0 auto;
-
-}
 
 .article{
     display: inline-block;
     width: 420px;
-    height: 480px;
-    /* margin: 0;
-    padding: 0; */
-    margin-right: 19px;
-    margin-top: 62px;
+    margin: 0;
+    margin-right: 60px;
 }
 
 /* .article:not(:nth-child(2n)){
@@ -106,11 +111,11 @@ img{
     line-height: 17px;
     color: #b4ad9e;
     font-weight: 100;
-    line-height: ;
     text-transform: uppercase;
     /*p=17-14/2=1,5; h3=36-30/2=3; 3+4,5~5px  mb=30-5=25px */
-    margin-bottom: 25px;
+    margin: 0;
     margin-top: 30px;
+    margin-bottom: 25px;
     text-align: left;
 }
 
@@ -118,6 +123,7 @@ img{
 .heading{
     font-size: 30px;
     line-height: 36px;
+    margin: 0;
     /* разница 8px(см формулу вебирана), расстояние линейкой 35px. 35-8=27px будет margin-bottom;  */
     margin-bottom: 27px;
 }
@@ -125,6 +131,7 @@ img{
 .post{
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
 }
 
 
@@ -136,8 +143,12 @@ button{
     line-height: 24px;
     border: 1px solid;
     padding: 15px 34px;
-    /* margin-top: 50px;
-    margin-bottom: 70px; */
     display: block;
     margin: 50px auto 70px;
+}
+
+
+button:hover{
+    cursor: pointer;
+    color: #03a9f4; 
 }
