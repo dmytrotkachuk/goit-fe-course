@@ -90,6 +90,9 @@ img{
     width: 420px;
     margin: 0;
     margin-right: 60px;
+    /* margin-right: 19px;*/
+     /* margin-top: 62px; */
+     margin-bottom: 62px;
 }
 
 /* .article:not(:nth-child(2n)){
@@ -104,6 +107,9 @@ img{
     margin-left: 0;
 } */
 
+.image{
+    margin-bottom: 30px;
+}
 
 .article-name{
     font-family: Ubuntu;
@@ -114,7 +120,6 @@ img{
     text-transform: uppercase;
     /*p=17-14/2=1,5; h3=36-30/2=3; 3+4,5~5px  mb=30-5=25px */
     margin: 0;
-    margin-top: 30px;
     margin-bottom: 25px;
     text-align: left;
 }
@@ -134,6 +139,10 @@ img{
     margin: 0;
 }
 
+.button-center{
+    text-align: center;
+    /* padding: 50px auto 70px; */
+}
 
 button{
     font-family: "Playfair Display", "Arial", sans-serif;
@@ -143,8 +152,8 @@ button{
     line-height: 24px;
     border: 1px solid;
     padding: 15px 34px;
-    display: block;
-    margin: 50px auto 70px;
+    display: inline-block;
+   
 }
 
 
@@ -152,3 +161,4 @@ button:hover{
     cursor: pointer;
     color: #03a9f4; 
 }
+
