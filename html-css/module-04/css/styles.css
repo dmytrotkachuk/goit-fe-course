@@ -1,0 +1,260 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+    padding: 0;
+}
+/* HEADER */
+.page-header{
+    /* outline: 2px solid teal; */
+}
+.site-navigation{
+    padding: 40px 0;
+
+    margin-bottom: 40px;
+}
+
+.site-logo{
+    font-family: "Roboto" , "Arial", sans-serif ;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #555252;
+    padding: 0;
+    margin: 0;
+    /* float: left; */
+}
+
+.site-logo::first-letter{
+    color: #1abc9c;
+    font-weight: 700;
+}
+
+.site-navigation a{
+    text-decoration: none;
+    color: #0f0101;
+    text-transform: uppercase;
+}
+
+.site-navigation-list{
+    list-style: none;
+    color: #0f0101;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: 700;
+    width: 500px;
+    margin: 0;
+    margin-top: -20px;
+    padding: 0;
+    float: right;
+}
+
+.site-navigation-list li{
+   float: left;
+}
+.site-navigation-list li:not(:last-child){
+    margin-right: 35px;
+}
+
+.site-navigation-list a:hover,
+.site-navigation-list a:focus{
+    color: #1abc9c;
+}
+
+
+/* MAIN */
+.main-heading{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 32px;
+    color: #555252;
+    text-align: center;
+    
+}
+.main-heading::after{
+    background: #4ec6ab;
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    margin: 30px auto 0;
+}
+
+/* FEATURES */
+.features-list{
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.features-list-item{
+    float: left;      
+    /* margin: 0 30px 30px 0; */
+    width: 255px;   
+}
+.features-list-item:not(:nth-child(4n)){
+    margin-right: 30px;
+}
+.features-list-item:not(:nth-child(4n+4)){
+    margin-bottom: 30px;
+}
+
+
+.features-list a{
+    text-decoration: none;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 32px; 
+    color: #ffffff;
+    padding: 4px 58px 4px 14px ;    
+    background-color: #323232;
+    width: 255px;
+    height: 40px;
+}
+
+
+.features-list-item::before{
+    content: "";
+    display: block;
+    background-color: #e9f0fd;
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product1::before{
+    background-image: url(../images/product1.png);
+}
+.product2::before{
+    background-image: url(../images/product2.png);
+}
+.product3::before{
+    background-image: url(../images/product3.png);
+}
+.product4::before{
+    background-image: url(../images/product4.png);
+}
+.product5::before{
+    background-image: url(../images/product5.png);
+}
+.product6::before{
+    background-image: url(../images/product6.png);
+}
+.product7::before{
+    background-image: url(../images/product7.png);
+}
+.product8::before{
+    background-image: url(../images/product8.png);
+}
+
+
+/* background-image:;
+background-repeate: no repeate;
+background-position:center;*/
+
+
+
+/* Хрен пойми как это сделать
+.features-list-item a::after:nth-child(n){
+    display: inline;
+    content: "26$";
+    clear: both;
+} */
+
+
+
+
+.features-list a:hover,
+.features-list a:focus{
+    cursor: pointer;
+    color: #ffffff;
+    background: #1abc9c;
+}
+/* .features-list a>span:hover,
+.features-list a>span:focus {
+    cursor: pointer;
+    color: #ffffff;
+    background: #7fd9c7;
+} */
+
+
+
+/* BLOG */
+.blog{
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #555252;
+  
+}
+.blog-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-list-item{
+width: 350px;
+float: left;
+}
+.blog-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.blog-list-heading{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+.blog-list-heading::after{
+    background: #4ec6ab;
+    content: "";
+    display: block;
+    width: 137px;
+    height: 3px;
+    margin: 11px 0;
+}
+
+.blog-list-content{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.blog-list-button{
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    background: #4ec6ab;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #4ec6ab;
+    border-radius: 6px;
+}
+
+.blog-list-button:hover,
+.blog-list-button:focus{
+    cursor: pointer;
+    color: #4ec6ab;
+    background: none;
+    outline: none;
+}
+
+
+
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
