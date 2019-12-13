@@ -344,11 +344,15 @@ position: absolute;
     list-style: none;
     margin: 0;
     padding: 20px 0;
+    font-size: 0;
 }
 .footer-list-item{
     display: inline-block;
     color: #fff;
     position: relative;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .footer-list-item:first-child{
@@ -360,11 +364,10 @@ position: absolute;
     display: table;
     position: absolute;
     height: 17px;
-    width: 3px;
+    width: 2px;
     background-color:#fff;
-    right: -8px;
-    
-    top: 0;
+    right: -6px;
+    bottom: 6px;
 }
 
 .footer-link{
