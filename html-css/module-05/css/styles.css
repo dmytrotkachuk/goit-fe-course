@@ -15,26 +15,27 @@ html{
 }
 
 .container{
-    width: 1600px;
+    /* width: 1600px; */
     margin: 0 auto;
     padding: 0;
 }
 
 /* HEADER */
 .page-header{
-    position: relative;
+    /* position: relative; */
     height: 90px;
+    padding: 0 245px;
 }
 
 .site-navigation{
     padding: 37px 0 33px 0;
     /* margin-bottom: 40px; */
-    position: absolute;
+    /* position: absolute; */
     width: 1110px;
-    left: 245;
+    /* left: 245;
     right: 245px;
     top: 0;
-    bottom: 0;
+    bottom: 0; */
     
 
 }
@@ -351,6 +352,7 @@ position: absolute;
 .page-footer{
     height: 88px;
     background-color: #323232;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     text-align: center;
