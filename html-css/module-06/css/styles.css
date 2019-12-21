@@ -80,9 +80,11 @@ margin-bottom: 110px;
 
 .menu-link:hover::after{
     opacity: 1;
+    transition: linear 200ms;
 }
 .menu-link:hover{
     color: #f38181  ;
+    transition: linear 200ms;
 }
 
 
@@ -245,12 +247,13 @@ margin-bottom: 110px;
 .team-list-item:hover .team-img, 
 .team-list-item:hover .modal-wrap{
     transform: translate(-10px,-10px);
-    transition: transform 0.5s;
+    transition: linear 200ms;
 }
 
 
 .team-list-item:hover .modal-backdrop{
     display: flex;
+    transition: linear 200ms;
 }
 
 
