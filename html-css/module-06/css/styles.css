@@ -17,12 +17,12 @@ body{
 /* HEADER */
 .site-navigation{
 max-width: 100%;
-height: 71px;
+/* height: 71px; */
 margin: 0 auto;
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-bottom: 110px;
+padding-bottom: 110px;
     
 }
 
@@ -38,7 +38,6 @@ margin-bottom: 110px;
 .site-logo{
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 12px;
 }
 
 .menu{
@@ -124,7 +123,6 @@ margin-bottom: 110px;
 }
 
 .features-list{
-    height: 250px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -137,13 +135,19 @@ margin-bottom: 110px;
 
 .features-list-item{
     flex-basis: 380px;
-    position: relative;
+
+}
+
+.features-list-item:nth-child(-n+3){
+    margin-bottom: 95px;
 }
 
 .box{
     width: 270px;
     margin: 0;
     padding: 0;
+    padding-left: 80px;
+    position: relative;
 }
 
 .box::before{
@@ -155,7 +159,8 @@ margin-bottom: 110px;
     top: 0;
     bottom: 0;
     margin: auto;
-    left: -55px;
+    left: 20px;
+    
 }
 
 .box.alarm::before {
@@ -183,9 +188,11 @@ margin-bottom: 110px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 40px;
     text-transform: uppercase;
     color: #333333;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -202,7 +209,7 @@ margin-bottom: 110px;
 
 /* TEAM */
 .team{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 .team-info{
@@ -214,7 +221,7 @@ margin-bottom: 110px;
     text-align: center;
     margin: 0;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .team-list{
@@ -252,7 +259,7 @@ margin-bottom: 110px;
 
 
 .team-list-item:hover .modal-backdrop{
-    display: flex;
+    opacity: 1;
     transition: linear 200ms;
 }
 
@@ -268,8 +275,8 @@ margin-bottom: 110px;
     background-image: linear-gradient(to bottom, rgba(243, 129, 129, .7) ,rgba(252, 227, 138, .7));
     width: 380px;
     height: 470px;
-    opacity:;
-    display: none;
+    opacity: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
