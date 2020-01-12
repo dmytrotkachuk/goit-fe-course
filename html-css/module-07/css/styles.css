@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "Montserrat-font", sans-serif;
+  src: url(../fonts/Montserrat/montserrat-v14-latin-regular.woff) format("woff"),
+    url(../fonts/Montserrat/montserrat-v14-latin-regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat-font", sans-serif;
+  src: url(../fonts/Montserrat/montserrat-v14-latin-700.woff) format("woff"),
+    url(../fonts/Montserrat/montserrat-v14-latin-700.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat-font", sans-serif;
+  src: url(../fonts/Montserrat/montserrat-v14-latin-italic.woff) format("woff"),
+    url(../fonts/Montserrat/montserrat-v14-latin-italic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto-slab-font", sans-serif;
+  src: url(../fonts/Roboto-slab/roboto-slab-v10-latin-regular.woff)
+      format("woff"),
+    url(../fonts/Roboto-slab/roboto-slab-v10-latin-regular.woff2)
+      format("woff2");
+  font-weight: 400;
+}
+
+/* @font-face{
+    font-family: "Dancing-script-font";
+    src: url(../fonts/Dancing-script/dancing-script-v13-latin-700.woff) format("woff"),
+     url(../fonts/Dancing-script/dancing-script-v13-latin-700.woff2) format("woff2");
+    font-weight: 700;
+} */
+
+@font-face {
+  font-family: "Wisdom-script-font";
+  src: url(../fonts/Wisdom-Script.woff) format("woff");
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 940px;
+}
+
+/* SITE NAVIGATION */
+
+.site-navigation {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.site-logo {
+  text-decoration: none;
+  font-family: "Wisdom-script-font";
+  font-weight: 700;
+  color: #fed136;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+/* MENU */
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  width: 485px;
+  justify-content: space-around;
+}
+
+.menu-list-item {
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #313131;
+  /* border: 1px solid #fed136; */
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-family: "Montserrat-font", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 41px;
+}
+
+.menu-link:hover {
+  color: #fed136;
+}
+
+/* HEADING+ABOUT SECTION,FOOTER  */
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat-font", sans-serif;
+  font-size: 40px;
+  line-height: 75px;
+  color: #222222;
+  text-align: center;
+}
+
+.title-about {
+  font-family: "Montserrat-font", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: san-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777777;
+}
+
+/* SERVICES SECTION */
+
+.services {
+  padding: 100px 0;
+}
+
+.services-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item {
+  padding-top: 105px;
+  width: 290px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.services-list-item::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: auto;
+}
+
+.services-list-item.basket::before {
+  background-image: url(../img/icon/Icon-Basket.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services-list-item.laptop::before {
+  background-image: url(../img/icon/Icon-Laptop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services-list-item.locked::before {
+  background-image: url(../img/icon/Icon-Locked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list-item-title {
+  font-family: "Montserrat-font", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 71px;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+.list-item-description {
+  font-family: "Roboto-slab-font", sans-serif;
+  font-size: 14px;
+  color: #777777;
+  margin: 0;
+  padding: 0;
+}
+
+/* FOOTER */
+
+.page-footer {
+  height: 675px;
+  min-height: 100%;
+  padding-top: 100px;
+  background-color: #222222;
+  /* background-image: url(../img/map-bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
+    background-size: contain; */
+}
+
+.page-footer h2 {
+  color: #ffffff;
+}
+
+.contact-form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  position: relative;
+}
+
+.contact-form::after {
+  content: "";
+  background-image: url(../img/map-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  right: 0;
+  transform: translate(30%, -25%);
+}
+
+.contact-form input {
+  /* line-height: 50px; */
+  height: 50px;
+}
+
+textarea {
+  resize: none;
+  width: 455px;
+  /* height: 209px; */
+}
+
+.form-field {
+  font-family: "Montserrat-font", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #313131;
+  width: 455px;
+  min-width: 100%;
+}
+
+.form-field::placeholder {
+  text-transform: uppercase;
+  font-family: "Montserrat-font", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.form-field:valid {
+  border: 1px solid #00c673;
+  border-radius: 2%;
+  outline: none;
+}
+.form-field:invalid {
+  border: 2px solid #ff0000;
+  border-radius: 2%;
+  outline: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-group {
+  margin: 0 auto;
+}
+
+.form-button {
+  text-transform: uppercase;
+  background-color: #fed136;
+  color: #ffffff;
+  font-family: "Montserrat-font", sans-serif;
+  font-weight: 700;
+  width: 240px;
+  height: 65px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: transparent;
+  /* position: absolute; */
+}
+
+.form-button:hover {
+  cursor: pointer;
+  border: 2px solid #fed136;
+  background-color: #fff;
+  color: #fed136;
+}
