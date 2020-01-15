@@ -199,7 +199,7 @@ body {
 
 /* FOOTER */
 
-.page-footer {
+.contact-section {
   height: 675px;
   min-height: 100%;
   padding-top: 100px;
@@ -210,7 +210,7 @@ body {
     background-size: contain; */
 }
 
-.page-footer h2 {
+.contact-section h2 {
   color: #ffffff;
 }
 
