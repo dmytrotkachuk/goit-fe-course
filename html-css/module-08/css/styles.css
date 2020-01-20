@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 20px;
+}
+
+/* HEADER */
+.page-header{
+    background-image: url(../img/bg-desktop.png);
+    background-color: #222222;
+    background-position: 50% 0;
+    background-size: cover;
+    height: auto;
+
+}
+
+.site-navigation{
+    /* width: 940px; */
+    height: 180px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.form{
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+    display: flex;
+   
+}
+.form-link{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+
+}
+
+.form-link:hover,
+.form-link:focus{
+    border-color: #ffffff ;
+}
+
+.header-content{
+    padding: 30px 0 140px 0;
+}
+
+.title-block{
+    display: block;
+}
+
+.header-title{
+    text-transform: uppercase;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    padding: 0;
+}
+
+.header-subtitle{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    padding: 0;
+   
+}
+
+.header-link{
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    padding: 11px 0;
+    color: #ffffff;
+    background-color: #ff4e50;
+    border-radius: 40px;
+    width: 280px;
+    height: 40px;
+   
+}
+
+
+/* MAIN */
+.partners{
+    padding: 70px 0 0 0;
+    } 
+
+.main-title{
+    font-family: "Montserrat" , sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 17px;
+
+}
+
+.partners-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.partners-list-item{
+    width: 222px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+
+.partners-name{
+    font-family: "Montserrat" , sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+
+}
+.partners-about{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #666666;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.circle{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-wrapper{
+    position: relative;
+    margin-bottom: 15px;
+}
+.img-wrapper::after{
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    /* background-color: #ff4e50; */
+    transform: translate(-100%, 280%);
+
+}
+
+.img-wrapper.tv-01::after {
+    background-color: #ff4e50;
+    background-image: url(../img/icon/tv-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-wrapper.glass-02::after {
+    background-color: #ffa507;
+    background-image: url(../img/icon/glass-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-wrapper.cup-03::after {
+    background-color: #1cd7ad;
+    background-image: url(../img/icon/cup-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-wrapper.flight-04::after {
+    background-color: #4e73db;
+    background-image: url(../img/icon/flight-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.partners-link{
+    font-family: "Montserrat" , sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    border-radius: 40px;
+    text-align: center; 
+    margin: 0 auto;
+    padding: 11px 0;
+    width: 280px;
+    height: 40px;
+
+}
