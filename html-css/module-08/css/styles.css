@@ -6,7 +6,8 @@
 }
 
 .container{
-    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -20,7 +21,6 @@
 }
 
 .site-navigation{
-    /* width: 940px; */
     height: 180px;
     display: flex;
     flex-direction: column-reverse;
@@ -122,7 +122,7 @@
 
 /* MAIN */
 .partners{
-    padding: 70px 0 0 0;
+    padding: 70px 0;
     } 
 
 .main-title{
@@ -137,16 +137,13 @@
 }
 
 .partners-list{
-    margin: 0;
     padding: 0;
     list-style: none;
     
 }
 .partners-list-item{
-    width: 222px;
+    width: 77.6666%;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
 }
 
 
@@ -189,7 +186,6 @@
     height: 33px;
     border: 3px solid #ffffff;
     border-radius: 50%;
-    /* background-color: #ff4e50; */
     transform: translate(-100%, 280%);
 
 }
@@ -235,5 +231,4 @@
     padding: 11px 0;
     width: 280px;
     height: 40px;
-
 }
