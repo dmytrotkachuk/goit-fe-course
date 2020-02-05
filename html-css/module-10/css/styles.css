@@ -28,7 +28,7 @@
             justify-content: space-between;
 }
 
-.img{
+.team__img{
     max-width: 100%;
     display: block;
     height: auto;  
@@ -189,7 +189,7 @@
 .features{ 
 }
 
-.features__item--name{
+.features__name{
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -201,7 +201,7 @@
 
 }
 
-.features__item--about{
+.features__about{
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -298,7 +298,7 @@
 
 
 /* ANIMATION */
-.team__item:hover .img, 
+.team__item:hover .team__img, 
 .team__item:hover .modal__wrap{
     -webkit-transform: translate(-10px,-10px);
         -ms-transform: translate(-10px,-10px);
