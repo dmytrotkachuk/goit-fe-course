@@ -9,10 +9,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://dmytrotkachuk.github.io/goit-fe-course/html-css/module-11",
+  "homepage": "https://dmytrotkachuk.github.io/goit-fe-course",
   "repository": {
     "type": "git",
-    "url": "git+https://dmytrotkachuk.github.io/goit-fe-course/html-css/module-11"
+    "url": "git+https://dmytrotkachuk.github.io/goit-fe-course"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
